@@ -1,0 +1,112 @@
+
+/*** 
+FOOTER css
+====================================================================
+  Main Footer
+====================================================================
+
+***/
+
+.main-footer {
+    background: #111709;
+    padding: 25px 0 20%;
+    height: 100%;
+    clear: both;
+    
+  }
+  @media (max-width: 1000px) {
+    .main-footer{
+      padding-bottom: 30%;
+      
+    }
+  }
+  @media (max-width: 600px) {
+    .main-footer{
+      padding-bottom: 60%;
+      
+    }
+  }
+  
+
+  .main-footer .section-title:after,
+  .main-footer .section-title:before {
+    display: none;
+  }
+  .main-footer .section-title h4 {
+    color: #fff;
+    padding-top: 18px;
+    padding-bottom: 10px;
+  }
+  
+  
+  /*============ about-column =================*/
+  
+  .about-column li {
+    position: relative;
+    padding-left: 30px;
+    font-size: 15px;
+    color: #999;
+    line-height: 26px;
+    margin-bottom: 14px;
+  }
+  .about-column li span {
+    font-size: 18px;
+    color: #8dc63f;
+    position: absolute;
+    left: 0;
+    top: 6px;
+  }
+  
+  /*============ link-column =================*/
+  
+  .main-footer .link-column li {
+    position: relative;
+    margin-bottom: 16px;
+  }
+  
+  .main-footer .link-column li a {
+    position: relative;
+    margin-left: 15px;
+    color: #999;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+  }
+  
+  .main-footer .link-column li a:hover {
+    color: #8dc63f;
+  }
+  
+  .main-footer .link-column li a:before {
+    content: "\f0dd";
+    position: absolute;
+    font-size: 16px;
+    font-family: FontAwesome;
+    left: -19px;
+    top: 0px;
+    transform: rotate(-90deg);
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .main-footer .link-column li a:hover:before {
+    color: #8dc63f;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .main-footer .link-column li a:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    background: transparent;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    transition: 0.5s ease-in-out;
+  }
+  .main-footer .link-column li a:hover:after {
+    background-color: #8dc63f;
+    transition: 0.5s ease;
+  }
+ 

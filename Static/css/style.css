@@ -1,0 +1,180 @@
+@charset "UTF-8";
+/************************
+=============================
+    CSS global pour toute les pages
+=============================
+
+**************************/
+/* ==============================
+   1. Imported styles
+   ==============================
+*/
+
+@import url(bootstrap.min.css);
+@import url(bootstrap-select.min.css);
+
+@import url(icomoon.css);
+
+
+@import url(navbarstyle.css);
+@import url(../js/burger.js);
+@import url(footer.css);
+@import url(responsive.css);
+
+@import url(animate.min.css);
+
+/* ==============================
+   2. Global styles
+   ============================== */
+
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+}
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+button {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  display: block;
+  padding: 0;
+  background: transparent;
+}
+span{
+  z-index: 0;
+}
+input,
+textarea {
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  font-size: 16px;
+  line-height: 28px;
+  outline: none;
+  box-shadow: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/*index section*/
+.sec-padd {
+  padding: 80px 0;
+}
+.sec-padd2 {
+  padding: 80px 0 30px;
+}
+.sec-padd3 {
+  padding: 80px 0 50px;
+}
+
+
+.center {
+  text-align: center;
+}
+
+.thm-color {
+  color: #8dc63f;
+}
+
+.float_left {
+  float: left;
+}
+.float_right {
+  float: right;
+}
+
+
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 0;
+  }
+}
+
+.thm-btn {
+  position: relative;
+  background: #8dc63f;
+  font-size: 14px;
+  line-height: 48px;
+  border-radius: 25px;
+  color: #ffffff;
+  border: 1px solid #8dc63f;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  padding: 0 38px;
+  transition: all 0.5s cubic-bezier(0.4, 0, 1, 1);
+}
+.thm-btn:hover {
+  background: transparent;
+  color: #8dc63f;
+  transition: all 0.5s cubic-bezier(0.4, 0, 1, 1);
+}
+
+
+.preloader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: #ffffff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(../images/icons/preloader.gif);
+}
+
+/*============ social icon ===================*/
+
+
+.logo {
+  display: none !important;
+}
+
+
+/*Color */
+
+.white{
+  color:white;
+}
+
+.clear{
+  clear: both;
+}
+.centre{
+  margin: auto;
+}
+.gauche{
+  float: left;
+}
+.droite{
+  float: right;
+}

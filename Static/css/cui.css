@@ -1,0 +1,319 @@
+@charset "UTF-8";
+
+/* ==============================
+   1. styles
+   ============================== */
+
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  height: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/*** 
+
+====================================================================
+    Box
+====================================================================
+
+***/
+
+.container{
+  width: 65%;
+  margin-right: 10%;
+  float: right;
+  display: block;
+}
+@media (max-width: 1000px) {
+  .container{
+    clear: both;
+    
+  }
+}
+@media (max-width: 600px) {
+  .container{
+    margin-right: 15%;
+    
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.company {
+  flex-basis: calc(25% - 1rem);
+  max-width: 100%;
+  padding-top: 2%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1rem;
+  border-radius: 6px;
+  background-color: #f4f9ec;
+  box-shadow: 0 0 0 1px #c5d0d1;
+  transform-origin: 10% 50%;
+}
+.company_rang {
+  flex-basis: calc(25% - 1rem);
+  width: 100%;
+  max-width: 100%;
+  padding-right: 25%;
+  padding-left: 25%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  border-radius: 25px;
+  margin-bottom: 10%;
+  background-color: #f4f9ec;
+  box-shadow: 0 0 0 1px #c5d0d1;
+  transform-origin: 10% 50%;
+}
+
+.company__label {
+  font-size: 0.8rem;
+}
+
+.company__info {
+  padding: 0 0.75rem;
+  text-align: center;
+  width: 100%;
+}
+
+.company__details {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  background-color: rgba(197, 208, 209, 0.1);
+  border-top: 1px solid #c5d0d1;
+}
+
+
+
+/*** 
+
+====================================================================
+    Carré Pagination
+====================================================================
+
+***/
+
+
+.container_pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 2vh;
+  clear: both;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+}
+
+.pagination a.current {
+  background-color: #8DC63F;
+  color: white;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.pagination a:hover:not(.current) {
+  background-color: #ddd;
+}
+
+.pagination a.disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  background-color: #f1f1f1;
+  color: #888;
+}
+
+.pagination a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.pagination a:not(:last-child) {
+  border-right: none;
+}
+
+.pagination a:not(:first-child) {
+  border-left: none;
+}
+
+/*** 
+
+====================================================================
+    Section de recherche
+====================================================================
+
+***/
+
+.Formulaire_recherche {
+  margin-left: 4%; 
+  display: block;
+  float: left;
+}
+  
+.Recherche_Input{
+  width:100%;
+  border-radius: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border: 2px solid #18A683;
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
+linear-gradient(0deg, #18A683, #18A683);
+}
+
+.Button_Recherche{
+    margin-top: 5%;
+    width: 100%;
+    margin-bottom: 10%;
+
+}
+p {
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+input[type='checkbox']{
+  white-space: nowrap;
+}
+
+
+.Button_Recherche,
+label p {
+  display: inline-flex;
+  padding: 2px 10px 2px 10px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 18px;
+  border: 1px solid #8DC63F;
+  background: #8DC63F;
+  color: white;
+}
+
+/* Styles lorsque le bouton radio est coché */
+input[type="radio"]:checked + p,
+input[type="checkbox"]:checked + p{
+  background: #8DC63F; /* Couleur verte lorsque le bouton radio est coché */
+  border-color: #8DC63F;
+}
+
+/* Styles lorsque le bouton radio n'est pas coché */
+input[type="radio"]:not(:checked) + p,
+input[type="checkbox"]:not(:checked) + p {
+  background: #242D0F; /* Couleur marron lorsque le bouton radio n'est pas coché */
+  border-color: #242D0F;
+}
+
+input[type="radio"]{
+  display: inline-flex;
+  width: 12px;
+  height: 12px;
+  align-items: flex-start;
+  flex-shrink: 0;
+
+  border-radius: 10px;
+  border: 1px solid var(--Black-400, #98A2B3);
+  background: var(--Black-100, #F2F4F7);
+}
+
+input[type="radio"]:checked{
+  background-color:#18A683;
+  color:#18A683;
+  border-radius: 10px;
+  border: 1px solid var(--Primary-500, #22C28A);
+}
+
+.radio, .checkbox{
+  margin-left: 20%;
+}
+
+select{
+  margin-left: 10%;
+}
+h1{
+  
+  color: #000;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 4%;
+  line-height: 24px; /* 96% */
+  font-weight: bold;
+  margin-bottom: 1%;
+  margin-top: 8%;
+}
+h3{
+  font-size: 18px;
+}
+
+h4{
+  font-weight: bold;
+}
+
+@media (max-width: 1204px) {
+  
+  .pagination a {
+    padding: 6px 11px;
+  }
+  
+  .Formulaire_recherche {
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    display: block;
+  }
+  h1{
+    font-size: 18px;
+    white-space: nowrap;
+    margin-left: 20%;
+    margin-bottom: 0%;
+  }
+  h4 {
+    clear: both;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  .Button_Recherche{
+    margin-top: 4%;
+    margin-bottom: 3%;
+  }
+  
+  .radio,
+  .checkbox { 
+    float: left;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    clear: none; /* Adjust the spacing between radio boxes as needed */
+  }
+}
+

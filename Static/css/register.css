@@ -1,0 +1,87 @@
+
+/* Styles pour les pages Inscription.php , Connexion.php, Inscription.php et 404.php */
+
+body {
+
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir tout l'arrière-plan */
+    bottom:0;
+    background-image: url('../images/background/Background_Register.jpg');
+    
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.red{
+    color: #ff0000;
+}
+.register-container {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 80px;
+    background: rgba(240, 240, 240, 1); /* Couleur avec opacité (0.8) pour la transparence */
+}
+
+.register-container h2 {
+    font-size: 32px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.register-container label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 16px;
+    color: #8DC63F;
+}
+
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"] {
+    flex-shrink: 0;
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.register-container #submit-button {
+    background-color: #8DC63F; /* Vert nature */
+    color: #fff;
+    padding: 2% 20%;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: auto; /* Ajout de cette ligne pour centrer le bouton horizontalement */
+    margin-top: 5%;
+    display: block; /* Rend le bouton un élément de bloc pour qu'il occupe toute la largeur disponible */
+}
+
+.register-container #submit-button:hover {
+    background-color: #45a049; /* Vert nature légèrement plus foncé au survol */
+}
+
+
+.register-container p {
+    margin-top: 20px;
+}
+
+.register-container a {
+    color: #8DC63F; 
+    text-decoration: none;
+}
+
+.register-container a:hover {
+    color: #45a049; /* Changement de couleur au survol */
+    text-decoration: underline;
+
+}

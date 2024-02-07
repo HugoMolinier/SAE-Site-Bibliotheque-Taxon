@@ -1,0 +1,39 @@
+.Présentation{
+    width: 70%;
+    margin-left: 0; /* Ajout de la marge auto pour centrer */
+    overflow: hidden;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    float: right;
+    
+    
+}
+.carre_information {
+    overflow: hidden;
+    background-color: #f4f9ec;
+    border-radius: 35px;
+    color: black;
+    padding: 2%;
+    width: 80%;
+    margin-left: 0; /* Center the block horizontally */
+    display: block; /* Make it a block element */
+    margin-top: 3%; /* Adjust the top margin as needed */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+.button_collection{
+    float: right;
+    width: 20%;
+    margin-right: 15%;
+    padding: 1% 1%;
+    border-radius: 15px;
+    border-color: #f4f9ec;
+    background-color: #f4f9ec;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.04);
+
+}
+@media (max-width: 900px) {
+    .button_collection{
+        float: none;
+        width: 100%;
+      }
+}
