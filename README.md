@@ -1,11 +1,13 @@
 
 # ReadMe
 ## Créateur
-Ce projet a été créé par MOLINIER Hugo, dans le cadre d'un projet académique de ça 2ème année.
+Ce projet a été créé par MOLINIER Hugo, dans le cadre d'un projet académique de sa 2ème année.
 
-## Modules Utilisés
+## Languages Utilisés
 - PHP 8.0.26
 - HTML5
+- CSS
+- JavaScript
   
 ## Fichiers et Utilisation
 Format utiliser MVT
