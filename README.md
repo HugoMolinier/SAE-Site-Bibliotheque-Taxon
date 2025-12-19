@@ -1,7 +1,7 @@
 
 # ReadMe
 ## Créateur
-Ce projet a été créé par MOLINIER Hugo, dans le cadre d'un projet académique de sa 2ème année.
+Ce projet a été créé par MOLINIER Hugo,SABAU Damien et DILMI Kaïs dans le cadre d'un projet académique de sa 2ème année.
 
 ## Languages Utilisés
 - PHP 8.0.26
